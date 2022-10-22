@@ -16,10 +16,10 @@ class MyApp : Application() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
                 COUNTER_CHANNEL_ID,
-                "Counter",
+                "Counter chanel",
                 NotificationManager.IMPORTANCE_HIGH
             )
-            channel.description = "Used for the increment counter notificatons"
+            channel.description = "Used for the increment counter notifications"
 
             val notificationManager =
                 getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager

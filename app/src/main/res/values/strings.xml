@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Notification App</string>
     <string name="show_notification">Show notification</string>
+    <string name="request_permission">Request permission</string>
 </resources>

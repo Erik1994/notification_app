@@ -40,7 +40,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.notification_btn).setOnClickListener {
             if(isPermissionGranted()) {
                 provider?.showNotification(Counter.value)
-            } else {
+            }
+        }
+        findViewById<Button>(R.id.permission_button).setOnClickListener {
+            if (!isPermissionGranted()) {
                 requestPermission()
             }
         }

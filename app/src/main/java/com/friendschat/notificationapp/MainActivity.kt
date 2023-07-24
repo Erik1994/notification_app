@@ -11,11 +11,13 @@ import android.os.Bundle
 import android.provider.Settings
 import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
+    val viewModel: ViewModel by viewModels()
     private var provider: NotificationProvider? = null
     private val requestPermissions =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
